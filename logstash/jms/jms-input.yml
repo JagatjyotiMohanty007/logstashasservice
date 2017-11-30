@@ -1,0 +1,11 @@
+input:
+  :jndi_name: input
+  :jndi_context:
+    java.naming.factory.initial: org.apache.qpid.jndi.PropertiesFileInitialContextFactory
+    connectionfactory.input: amqp://admin:admin@QPID/?brokerlist='tcp://localhost:10003'
+  :require_jars:
+    - C:\qpid-client\6.1.2\lib\geronimo-jms_1.1_spec-1.1.1.jar
+    - C:\qpid-client\6.1.2\lib\qpid-client-6.1.2.jar
+    - C:\qpid-client\6.1.2\lib\qpid-common-6.1.2.jar
+    - C:\qpid-client\6.1.2\lib\slf4j-api-1.7.12.jar
+    - C:\qpid-client\6.1.2\lib\slf4j-simple-1.7.12.jar

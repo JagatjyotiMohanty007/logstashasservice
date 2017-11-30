@@ -1,0 +1,16 @@
+1. download logstash plugin for jms output from github 
+https://github.com/logstash-plugins/logstash-output-jms
+extract 
+
+then copy to C:\logstash-5.3.2\vendor\bundle\jruby\1.9\gems\ folder with renaming as version of input plugin
+
+
+2.C:\logstash-5.3.2\vendor\bundle\jruby\1.9\gems\logstash-output-jms-3.0.1-java>gem build logstash-output-jms.gemspec
+
+3.C:\logstash-5.3.2\bin>logstash-plugin install C:/logstash-5.3.2/vendor/bundle/jruby/1.9/gems/logstash-output-jms-3.0.1-java/logstash-output-jms-3.0.1.gem
+
+4. Copy this file logstash-output-jms-3.0.1.gem to this  location C:\logstash-5.3.2\vendor\bundle\jruby\1.9\cache
+
+5. logstash-plugin list
+
+for coding need to modify jms.rb file placed in 

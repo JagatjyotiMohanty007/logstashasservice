@@ -1,0 +1,19 @@
+# Apache Qpid
+qpid:
+  :jndi_name: local
+  :jndi_context:
+    java.naming.factory.initial: org.apache.qpid.jndi.PropertiesFileInitialContextFactory
+    connectionfactory.local: amqp://guest:guest@clientid/testpath?brokerlist='tcp://localhost:5672'
+  :require_jars:
+    - C:\qpid-client\6.1.2\lib\javax.jms.jar
+    - C:\qpid-client\6.1.2\lib\qpid-client-6.1.2.jar    
+    - C:\qpid-client\6.1.2\lib\qpid-common-6.1.2.jar    
+    - C:\qpid-client\6.1.2\lib\slf4j-api-1.7.12.jar
+    - C:\qpid-client\6.1.2\lib\log4j-1.2.12.jar
+    - C:\qpid-client\6.1.2\lib\slf4j-log4j12-1.6.1.jar    
+    - C:\qpid-client\6.1.2\lib\mina-core-1.0.1.jar    
+    - C:\qpid-client\6.1.2\lib\commons-lang-2.2.jar    
+    - C:\qpid-client\6.1.2\lib\commons-collections-3.2.jar
+    - C:\qpid-client\6.1.2\lib\backport-util-concurrent-2.2.jar
+    - C:\qpid-client\6.1.2\lib\slf4j-simple-1.7.12.jar
+    - C:\qpid-client\6.1.2\lib\geronimo-jms_1.1_spec-1.1.1.jar
